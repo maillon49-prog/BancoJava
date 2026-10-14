@@ -33,6 +33,26 @@ O projeto pode ser executado diretamente pelo código-fonte ou através da vers�
 
 Para usuários do Windows, existe um instalador disponível na seção **Releases** deste repositório.
 
+## Contas para teste
+
+Este projeto utiliza contas fictícias criadas apenas para demonstração e testes.
+
+### Conta Maillon
+
+- Número da conta: `001`
+- Senha: `123`
+- Chave Pix: `121212`
+
+### Conta Antony
+
+- Número da conta: `002`
+- Senha: `456`
+- Chave Pix: `565656`
+
+Você pode usar as duas contas para testar login, depósito, saque, troca de conta e transferências via Pix entre elas.
+
+> Esses dados são fictícios e fazem parte apenas do projeto de aprendizado.
+
 ## Objetivo do projeto
 
 Este projeto foi desenvolvido com foco em aprendizado e prática de Java.
