@@ -1,66 +1,76 @@
-# BancoJava
+<p align="center"><img src="assets/readme-cover.svg" alt="Capa do projeto Banco Java — Sistema Bancário no Terminal" width="100%"></p>
+# Banco Java — Sistema Bancário no Terminal
+![Java](https://img.shields.io/badge/Java-25-ed8b00?style=for-the-badge) ![Maven](https://img.shields.io/badge/Maven-Build-c71a36?style=for-the-badge) ![JLine](https://img.shields.io/badge/JLine-Terminal-7c3aed?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Concluido-22c55e?style=for-the-badge)
 
-Sistema bancário em Java desenvolvido como projeto de aprendizado e prática da linguagem.
+> Simulador bancário em Java com autenticação, operações financeiras fictícias e navegação interativa no terminal. Desenvolvido para praticar lógica, orientação a objetos e validações.
 
-O projeto foi criado para reforçar conceitos de Java, programação orientada a objetos, validações, controle de fluxo, arrays, métodos e interação com o terminal.
+💻 **[Ver código](https://github.com/maillon49-prog/BancoJava)** · 📦 **[Ver versões para Windows](https://github.com/maillon49-prog/BancoJava/releases)**
 
-## Funcionalidades
+## ✨ Funcionalidades
+- 🔐 Login com número da conta e senha
+- 👥 Múltiplas contas e troca entre usuários
+- 💰 Consulta de saldo, depósito e saque
+- 💸 Transferências Pix entre contas de demonstração
+- 🛡️ Validação de saldo, valores e transferências para a própria chave
+- ⌨️ Menu interativo com as setas do teclado usando JLine
+- 🚪 Encerramento de sessão
 
-- Login com número da conta e senha
-- Múltiplas contas bancárias
-- Consulta de saldo
-- Depósito
-- Saque
-- Transferência via Pix
-- Validação de saldo
-- Validação de valores
-- Bloqueio de Pix para a própria chave
-- Troca de conta
-- Menu interativo utilizando as setas do teclado
-- Encerramento de sessão
+## 🛠️ Tecnologias
+| Linguagem | Build e dependências | Distribuição |
+| :-- | :-- | :-- |
+| Java 25 | Maven, JLine 4.4.3 | jpackage e WiX Toolset |
 
-## Tecnologias utilizadas
+## 🧭 Fluxo de uso
+```mermaid
+flowchart TD
+  A[Iniciar programa] --> B[Autenticação]
+  B --> C[Menu da conta]
+  C --> D[Consultar saldo]
+  C --> E[Depositar ou sacar]
+  C --> F[Transferir via Pix]
+  C --> G[Trocar conta ou sair]
+```
 
-- Java
-- Maven
-- JLine
-- jpackage
-- WiX Toolset
+## 🚀 Como executar
+### Opção 1 — Código-fonte
+**Requisitos:** JDK 25 e Maven.
 
-## Execução
+```bash
+git clone https://github.com/maillon49-prog/BancoJava.git
+cd BancoJava
+mvn package
+java --enable-native-access=ALL-UNNAMED -jar target/BancoJava.jar
+```
 
-O projeto pode ser executado diretamente pelo código-fonte ou através da versão compilada para Windows.
+**Windows:** também existe o script `executar.ps1`, que compila e inicia o projeto pelo terminal.
 
-Para usuários do Windows, existe um instalador disponível na seção **Releases** deste repositório.
+### Opção 2 — Windows
+Consulte a seção **[Releases](https://github.com/maillon49-prog/BancoJava/releases)** para a versão distribuída como instalador.
 
-## Contas para teste
+## 🧪 Contas fictícias para testes
+| Conta | Número | Senha | Chave Pix |
+| :-- | :-- | :-- | :-- |
+| Maillon | `001` | `123` | `121212` |
+| Antony | `002` | `456` | `565656` |
 
-Este projeto utiliza contas fictícias criadas apenas para demonstração e testes.
+> ⚠️ Todas as contas e senhas acima são **fictícias e destinadas apenas a testes**. O projeto é educacional e não executa operações bancárias reais.
 
-### Conta Maillon
+## 📁 Estrutura principal
+```text
+BancoJava/
+├── src/main/java/Main.java
+├── pom.xml
+├── executar.ps1
+└── README.md
+```
 
-- Número da conta: `001`
-- Senha: `123`
-- Chave Pix: `121212`
+## 🎯 O que pratiquei
+Programação orientada a objetos, menus de terminal, validações, fluxo de operações e distribuição de aplicações Java.
 
-### Conta Antony
+---
 
-- Número da conta: `002`
-- Senha: `456`
-- Chave Pix: `565656`
+### 👨‍💻 Autor
 
-Você pode usar as duas contas para testar login, depósito, saque, troca de conta e transferências via Pix entre elas.
+Desenvolvido por **Maillon Andrade de Oliveira**, como parte dos meus estudos e projetos práticos de programação.
 
-> Esses dados são fictícios e fazem parte apenas do projeto de aprendizado.
-
-## Objetivo do projeto
-
-Este projeto foi desenvolvido com foco em aprendizado e prática de Java.
-
-A ideia foi aplicar conceitos que eu já utilizava em programação e adaptá-los para o ecossistema Java, criando um sistema funcional do início ao fim.
-
-## Autor
-
-**Maillon Andrade de Oliveira**
-
-GitHub: [maillon49-prog](https://github.com/maillon49-prog)
+[GitHub](https://github.com/maillon49-prog) · [Portfólio](https://github.com/maillon49-prog/Portifolio)
