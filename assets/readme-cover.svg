@@ -14,8 +14,8 @@
 <rect x="633" y="51" width="591" height="58" rx="16" fill="#151f2e"/><rect x="633" y="90" width="591" height="19" fill="#151f2e"/>
 <circle cx="661" cy="80" r="6" fill="#f87171"/><circle cx="682" cy="80" r="6" fill="#fbbf24"/><circle cx="703" cy="80" r="6" fill="#34d399"/>
 <text x="746" y="85" font-family="Consolas, Monaco, monospace" font-size="14" fill="#8495ad">projeto / codigo</text>
-<text x="675" y="164" font-family="Consolas, Monaco, monospace" font-size="17" fill="#ffc36a">// JAVA 25  +  MAVEN</text>
-<text x="675" y="196" font-family="Consolas, Monaco, monospace" font-size="17" fill="#cbd5e1">// Login  /  Saldo  /  Saque  /  Pix</text>
-<text x="675" y="228" font-family="Consolas, Monaco, monospace" font-size="17" fill="#cbd5e1">// Terminal interativo com JLine</text>
-<text x="674" y="272" font-family="Consolas, Monaco, monospace" font-size="14" fill="#f59e69">// desenvolvido para aprender na pratica</text>
+<text x="675" y="164" font-family="Consolas, Monaco, monospace" font-size="17" fill="#ffc36a" xml:space="preserve">    static class ContaBancaria  {</text>
+<text x="675" y="196" font-family="Consolas, Monaco, monospace" font-size="17" fill="#cbd5e1" xml:space="preserve">        String nome;</text>
+<text x="675" y="228" font-family="Consolas, Monaco, monospace" font-size="17" fill="#cbd5e1" xml:space="preserve">        String numeroConta;</text>
+<text x="674" y="272" font-family="Consolas, Monaco, monospace" font-size="14" fill="#f59e69" xml:space="preserve">        int senha;</text>
 </svg>
